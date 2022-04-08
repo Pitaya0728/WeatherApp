@@ -45,7 +45,7 @@ export default {
   },
   data() {
     return {
-      APIkey: "adc9b25954e613c21648fffc47aa4435",
+      APIkey: "77e989b4f3dfbe5599e962ea5c3d3e0a",
       cities: [],
       modalOpen: null,
       edit: null,
@@ -73,7 +73,7 @@ export default {
               const response = await axios.get(
                 `https://api.openweathermap.org/data/2.5/weather?q=${
                   doc.doc.data().city
-                }&units=imperial&appid=${this.APIkey}`
+                }&units=metric&appid=${this.APIkey}`
               );
               const data = response.data;
               firebaseDB

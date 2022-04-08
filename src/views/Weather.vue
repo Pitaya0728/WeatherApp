@@ -64,7 +64,7 @@ export default {
                   doc.data().currentWeather.coord.lat
                 }&lon=${
                   doc.data().currentWeather.coord.lon
-                }&exclude=current,minutley,alert&units=imperial&appid=${
+                }&exclude=current,minutley,alert&units=metric&appid=${
                   this.APIkey
                 }`
               )
